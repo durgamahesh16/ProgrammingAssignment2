@@ -24,10 +24,10 @@ cacheSolve <- function(x) {
         if(!is.null(local_m)) {                  
                 message("getting cached data")  
                 return(local_m)
-        }                                       
+        }                             
         startingmatrix <- x$get()                                        
         endingmatrix <- solve(startingmatrix)   
         x$set_cache_m(endingmatrix)            
         endingmatrix                            
 }
-}
+
